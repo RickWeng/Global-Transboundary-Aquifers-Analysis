@@ -25,8 +25,8 @@ from arcpy.sa import *
 arcpy.CheckOutExtension("spatial")
 
 # Set geoprocessing environments
-arcpy.env.workspace = "C:\\Ricky\\Directed Study\\Anthrome.gdb"
-arcpy.env.scratchWorkspace = "C:\\Ricky\\Directed Study\\scratch.gdb"    
+arcpy.env.workspace = "C:\\Ricky\\Anthrome.gdb"
+arcpy.env.scratchWorkspace = "C:\\Ricky\\scratch.gdb"    
 
 # Define input variables:
 TBA = "TBA2015" # Transboundary aquifers shapefile
@@ -75,19 +75,19 @@ from arcpy.sa import *
 arcpy.CheckOutExtension("Spatial")
 
 # Set the geoprocessing environments
-arcpy.env.workspace = "C:\\Ricky\\Directed Study\\rename cover raster"
+arcpy.env.workspace = "C:\\Ricky\\rename cover raster"
 
 # Define input variables
-treecover = "C:\\Ricky\\Directed Study\\rename cover raster\\" # Renamed tree cover raster files. Tree cover in year 2000. Encoded as a percentage per output grid cell, in the range 0-100.
+treecover = "C:\\Ricky\\rename cover raster\\" # Renamed tree cover raster files. Tree cover in year 2000. Encoded as a percentage per output grid cell, in the range 0-100.
 addtree = ".tif"
 treecoverlist = []
 
 # Output variables
-OutDir ="C:\\Ricky\\Directed Study\\tree cover 50\\"
+OutDir ="C:\\Ricky\\tree cover 50\\"
 Outlist = []
 
 # Step 1: Change original tree cover file name to a series of numbers (original global tree cover datasets were stored in hundreds of tiles) 
-os.chdir ("C:\\Ricky\\Directed Study\\rename cover raster")
+os.chdir ("C:\\Ricky\\rename cover raster")
 print os.getcwd()
 i = 0
 for file in os.listdir("C:\\Ricky\\Directed Study\\rename cover raster"):
@@ -122,25 +122,25 @@ from arcpy.sa import *
 arcpy.CheckOutExtension("Spatial")
 
 # Set the geoprocessing environments
-arcpy.env.workspace = "C:\\Ricky\\Directed Study\\rename forest loss"
+arcpy.env.workspace = "C:\\Ricky\\rename forest loss"
 
 # Define input variables
-forestcover = "C:\\Ricky\\Directed Study\\tree cover 50\\" # Forest cover raster derived from previous goal 2. 0 means non-forests, 1 means forests.
+forestcover = "C:\\Ricky\\tree cover 50\\" # Forest cover raster derived from previous goal 2. 0 means non-forests, 1 means forests.
 addcover = ".tif"
 forestcoverlist = []
-forestloss = "C:\\Ricky\\Directed Study\\rename forest loss\\" # Renamed forest loss year raster. Forest loss during 2000-2014. Encoded as either 0 (no loss) or else a value in the range 1-14, representing loss detected primarily in the year 2001-2014, respectively.
+forestloss = "C:\\Ricky\\rename forest loss\\" # Renamed forest loss year raster. Forest loss during 2000-2014. Encoded as either 0 (no loss) or else a value in the range 1-14, representing loss detected primarily in the year 2001-2014, respectively.
 addforest = ".tif"
 forestlist = []
 
 # Output variables
-OutDir = "C:\\Ricky\\Directed Study\\forest loss within forests\\"
+OutDir = "C:\\Ricky\\forest loss within forests\\"
 Outlist = []
 
 # Step 1: Change original forest loss year file name to a series of numbers which correspond to tree cover file name(original global forest loss year datasets were stored in hundreds of tiles) 
-os.chdir ("C:\\Ricky\\Directed Study\\rename forest loss")
+os.chdir ("C:\\Ricky\\rename forest loss")
 print os.getcwd()
 i = 0
-for file in os.listdir("C:\\Rikcy\\Directed Study\\rename forest loss"):
+for file in os.listdir("C:\\Rikcy\\rename forest loss"):
     i += 1
     new_file_name = "{}.tif". format(i)
     os.rename(file,new_file_name)
@@ -172,19 +172,19 @@ from arcpy.sa import *
 arcpy.CheckOutExtension("Spatial")
 
 # Set the geoprocessing environments
-arcpy.env.workspace = "C:\\Ricky\\Directed Study\\forest loss within forests"
+arcpy.env.workspace = "C:\\Ricky\\forest loss within forests"
 # Import the spatial analyst supplemental tools which include improved tabulate area tool
 arcpy.ImportToolbox("C:\\Ricky\\Downloads\\SpatialAnalystSupplementalTools\\SpatialAnalystSupplementalTools\\Spatial Analyst Supplemental Tools.pyt")
 
 # Define input variables
 forestloss = arcpy.ListRasters()# forest loss raster when forest loss occurs within tree cover >= 50% (derived from previous goal 3)
 print (forestloss)
-aquifers = "C:\\Ricky\\Directed Study\\TBA2015.shp" # Transboundary aquifers shapefile
+aquifers = "C:\\Ricky\\TBA2015.shp" # Transboundary aquifers shapefile
 
 # Output variables
-outFolder = "C:\\Ricky\\Directed Study\\table of forest loss"
+outFolder = "C:\\Ricky\\table of forest loss"
 outTable = []
-aquifers_Raster = "C:\\Ricky\\Directed Study\\TBA2015_Raster" # Transboundary aquifers raster
+aquifers_Raster = "C:\\Ricky\\TBA2015_Raster" # Transboundary aquifers raster
 
 # Step 1: Change transboundary aquifer polygons to raster (resolution same as forest loss raster)
 # Process: Polygon to Raster
