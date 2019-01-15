@@ -7,8 +7,8 @@ Provided one of the first quantitative assessment of land use and forest cover c
 ## Data 
 
 * Transboundary Aquifers of the World Map (IGRAC, 2015)
-* Global Forest Change (Hansen et al., 2013)
 * Anthromes (Ellis et al., 2010)
+* Global Forest Change (Hansen et al., 2013)
 * Global Groundwater Table Depth (Fan et al., 2013)
 
 ## Examples
