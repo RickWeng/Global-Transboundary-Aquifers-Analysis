@@ -11,7 +11,7 @@ Provided one of the first quantitative assessment of land use and forest cover c
 * Global Forest Change (Hansen et al., 2013)
 * Global Groundwater Table Depth (Fan et al., 2013)
 
-## Examples
+## Selected Figures
 ![TBA](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/TBA.png)
 ![DetailedLUTrans](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/Detailed%20LU%20transform.png)
 ![LUTrans](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/LU%20Transform.png)
