@@ -1,5 +1,6 @@
 # Global Transboundary Aquifers Analysis
 Manuscript has been submitted to PLOS ONE.    
+Only abstract, selected figures, and one script of the first preprocessing step are provided here.
 
 ## Abstract
 Globally, almost two billion people depend on groundwater as their primary freshwater source. Atop many aquifers, expansion of anthropogenic land uses such as agriculture and urban development have contributed to widespread groundwater quality problems (high concentrations of chemicals or nutrients like nitrates). When combined with deforestation, such land use changes further diminish the ability of forests to mitigate aquifer contamination. Here, we conduct the first quantitative global analysis of land use conversion and forest loss above 592 transboundary aquifers from 2000 to 2014, to answer three primary questions: To what extent are transboundary aquifers impacted by different types of land use? Which land use type are associated with high rates of forest loss? Do these trends differ for deep and shallow aquifers?    
