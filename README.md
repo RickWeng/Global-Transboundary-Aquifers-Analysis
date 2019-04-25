@@ -18,7 +18,8 @@ Provided one of the first quantitative assessment of land use and forest cover c
 ![TBA](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/TBA.png)
 ![DetailedLUTrans](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/Detailed%20LU%20transform.png)
 ![LUTrans](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/LU%20Transform.png)
-![WTD-Anthromes](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/WTD_Anthrome.png)
 ![Forestkm](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/Total%20forest%20loss.png)
 ![Forestpercent](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/Total%20forest%20loss%20of%20total%20forest.png)
 ![TheilSen](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/Theil-Sen%20estimated%20trend%20slope.png)
+
+![WTD-Anthromes](https://github.com/RickWeng/Global-Transboundary-Aquifers-Analysis/blob/master/WTD_Anthrome.png)
