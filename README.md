@@ -1,5 +1,5 @@
 # Global Transboundary Aquifers Analysis
-Manuscript has been submitted to PLOS ONE.    
+Manuscript has been submitted to PLOS ONE journal.    
 Only abstract, selected figures, and one script of the first preprocessing step are provided here.
 
 ## Abstract
